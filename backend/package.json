@@ -14,7 +14,7 @@
     "es6"
   ],
   "repository": "git@github.com:dbalas/koalerplate.git",
-  "author": "Daniel Balastegui",
+  "author": "Andrew Loz",
   "license": "MIT",
   "version": "1.1.0",
   "main": "index.js",

@@ -2,7 +2,8 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
 import { connect } from 'react-redux'
-import { addTodo, toggleTodo, deleteTodo, fetchTodos } from './actions/todos';
+import * as actions from './actions/todos'
+// import { addTodo, toggleTodo, deleteTodo, fetchTodos } from './actions/todos';
 
 const Todo = ({ todo, id, onDelete, onToggle }) => (
   <div className="box todo-item level is-mobile">
@@ -89,11 +90,11 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = {
-  addTodo,
-  toggleTodo,
-  deleteTodo,
-  fetchTodos
-}
+// const mapDispatchToProps = {
+//   addTodo,
+//   toggleTodo,
+//   deleteTodo,
+//   fetchTodos
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Todos)
+export default connect(mapStateToProps, actions)(Todos)
